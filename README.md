@@ -22,6 +22,8 @@ a
 
 ## 2. 
 str = "krishna"
+
+
 output
 a
 
