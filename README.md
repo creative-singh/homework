@@ -4,6 +4,7 @@
 str = "krishna"
 
 output - 
+
 k
 
 r
