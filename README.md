@@ -25,7 +25,8 @@ a
 str = "krishna"
 
 
-output
+output -
+
 a
 
 n
@@ -46,6 +47,7 @@ k
 str = 'krishna'
 
 output
+
 k - 1 - k1
 
 r - 2 - r2
@@ -62,7 +64,9 @@ a - 7 - a7
 
 --
 ## 4. 
+
 output
+
 1001
    
 1002
@@ -86,6 +90,7 @@ output
 --
 ## 5. 
 output:
+
 10 - - - - 00
    
 10 - - - - 01
