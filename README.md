@@ -1,6 +1,6 @@
 # homework
 
-1.
+## 1.
 str = "krishna"
 
 output - 
@@ -20,7 +20,7 @@ a
 
 --
 
-2. 
+## 2. 
 str = "krishna"
 output
 a
@@ -39,7 +39,7 @@ k
 
 
 --
-3.
+## 3.
 str = 'krishna'
 
 output
@@ -58,7 +58,7 @@ n - 6 - n6
 a - 7 - a7
 
 --
-4. 
+## 4. 
 output
 1001
    
@@ -81,7 +81,7 @@ output
 1010
 
 --
-6. 
+## 5. 
 output:
 10 - - - - 00
    
