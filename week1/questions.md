@@ -1,5 +1,3 @@
-# Homework
-
 ## 1. Print a string using Loop.
 str = "krishna"
 
@@ -18,18 +16,6 @@ h
 n
 
 a
-
-### Solution:
-```js
-function loopLearning(str){
-    for(let i = 0; i < str.length; i++){
-        console.log(str[i]);
-    }
-}
-console.log(loopLearning("krishna"));
-console.log(loopLearning("kajal"));
-```
-
 
 ## 2. Reverse a string and print with loop.
 str = "krishna"
@@ -50,17 +36,7 @@ r
 
 k
 
-### Solution:
-```js
-function loopLearning(str){
-    for(let i = str.length-1; i >= 0; i--){
-        console.log(str[i]);
-    }
-}
-console.log(loopLearning("krishna"));
-console.log(loopLearning("kajal"));
-```
-
+--
 ## 3. Use LOOPS to get the desired output.
 str = 'krishna'
 
@@ -80,18 +56,6 @@ n - 6 - n6
 
 a - 7 - a7
 
-### Solution
-
-```js
-function loopLearning(str){
-    for(let i = 0; i < str.length; i++){
-        let num = i+1;
-        console.log(str[i] + "-" + num + "-" + str[i] + num);
-    }
-}
-console.log(loopLearning("krishna"));
-console.log(loopLearning("kajal"));
-```
 --
 ## 4. Use LOOPS to get the desired output. 
 
@@ -117,15 +81,6 @@ console.log(loopLearning("kajal"));
 
 1010
 
-### Solution:
-```js
-function loopLearning(arr){
-    for(let i = 0; i < arr.length; i++){
-        console.log(arr[i]);
-    }
-}
-console.log(loopLearning([1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010]));
-```
 
 --
 ## 5. Use LOOPS to get the desired output.
@@ -152,16 +107,6 @@ console.log(loopLearning([1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 
 
 10 - - - - 111
 
-### Solution:
-```js
-function loopLearning(arr){
-    for (let i = 0; i < arr.length; i++) {
-        console.log("10 - - - - " + arr[i]);
-    }
-}
-
-loopLearning(["00", "01", "10", "11", "010", "011", "100", "101", "110", "111"]);
-```
 
 # New Homework 16th Feb 2025
 
