@@ -43,5 +43,53 @@ console.log(multiplyNum(5))    // 5 10 15 20 25 30 35 40 45 50
 
 ```
 --
+## 4. 
+```js
+function isPrime(n) {
+    if (n <= 1) return "Not Prime";
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) return "Not Prime";
+    }
+    return "Prime";
+}
+
+console.log(isPrime(7));
+console.log(isPrime(8));
+
+```
+--
+## 5. 
+```js
+function factorial(n) {
+    if (n === 0 || n === 1) return 1;
+    let result = 1;
+    for (let i = 2; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+console.log(factorial(5));
+console.log(factorial(4));
+
+```
+--
+
+## 6. 
+```js
+function printEvenUpToN(n) {
+    let result = "";
+    for (let i = 2; i <= n; i += 2) {
+        result += i + " ";
+    }
+    return result.trim();
+}
+
+console.log(printEvenUpToN(10));
+console.log(printEvenUpToN(5));
+
+```
+--
+
 
 ### More solutions are coming soon.
