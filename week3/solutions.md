@@ -87,6 +87,23 @@ function printEvenUpToN(n) {
 
 console.log(printEvenUpToN(10));
 console.log(printEvenUpToN(5));
+```
+--
+
+##7
+```
+function reverseNum(num) {
+    let revNum = 0 
+    while(num > 0) {
+        lastPointer = num % 10;
+        revNum = revNum * 10 + lastPointer 
+        num = Math.floor(num / 10);
+    }
+    return revNum
+}
+
+console.log(reverseNum(1234))
+console.log(reverseNum(500))
 
 ```
 --
