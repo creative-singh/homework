@@ -91,7 +91,8 @@ console.log(printEvenUpToN(5));
 --
 
 ##7
-```
+
+```js
 function reverseNum(num) {
     let revNum = 0 
     while(num > 0) {
