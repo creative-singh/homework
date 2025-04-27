@@ -90,7 +90,7 @@ console.log(printEvenUpToN(5));
 ```
 --
 
-##7
+## 7.
 
 ```js
 function reverseNum(num) {
