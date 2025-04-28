@@ -12,7 +12,7 @@ console.log(printNum(5));  // 1 2 3 4 5
 console.log(printNum(3));  // 1 2 3
 
 ```
---
+
 ## 2. 
 ```js
 function sumNum(n) {
@@ -27,7 +27,7 @@ console.log(sumNum(5));   // 15
 console.log(sumNum(10));   // 55
 
 ```
---
+
 ## 3. 
 ```js
 function multiplyNum(n) {
@@ -42,7 +42,7 @@ console.log(multiplyNum(3))    // 3 6 9 12 15 18 21 24 27 30
 console.log(multiplyNum(5))    // 5 10 15 20 25 30 35 40 45 50
 
 ```
---
+
 ## 4. 
 ```js
 function isPrime(n) {
@@ -57,7 +57,7 @@ console.log(isPrime(7));    // Prime
 console.log(isPrime(8));    // Not Prime
 
 ```
---
+
 ## 5. 
 ```js
 function factorial(n) {
@@ -73,7 +73,7 @@ console.log(factorial(5));    // 120
 console.log(factorial(4));    // 24
 
 ```
---
+
 
 ## 6. 
 ```js
@@ -88,7 +88,7 @@ function printEvenUpToN(n) {
 console.log(printEvenUpToN(10));    // 2 4 6 8 10
 console.log(printEvenUpToN(5));    // 2 4 
 ```
---
+
 
 ## 7.
 
@@ -107,7 +107,7 @@ console.log(reverseNum(1234));    // 4321
 console.log(reverseNum(500));    // 5 
 
 ```
---
+
 ## 8.
 
 ```js
@@ -124,7 +124,7 @@ console.log(sumNum(123))        // 6
 console.log(sumNum(4321))       // 10
 
 ```
---
+
 ## 9.
 
 ```js
@@ -144,9 +144,7 @@ console.log(armstrong(153))        // Armstrong
 console.log(armstrong(123))       // Not Armstrong
 
 ```
---
 
---
 ## 10.
 
 ```js
@@ -163,5 +161,5 @@ function largestNum(arr) {
 console.log(largestNum([3, 7, 1, 9, 4]));        // 9
 console.log(largestNum([5, 2, 8, 6]));          // 8
 ```
---
+---
 ### More solutions are coming soon.
