@@ -53,8 +53,8 @@ function isPrime(n) {
     return "Prime";
 }
 
-console.log(isPrime(7));
-console.log(isPrime(8));
+console.log(isPrime(7));    // Prime
+console.log(isPrime(8));    // Not Prime
 
 ```
 --
@@ -69,8 +69,8 @@ function factorial(n) {
     return result;
 }
 
-console.log(factorial(5));
-console.log(factorial(4));
+console.log(factorial(5));    // 120
+console.log(factorial(4));    // 24
 
 ```
 --
@@ -85,8 +85,8 @@ function printEvenUpToN(n) {
     return result.trim();
 }
 
-console.log(printEvenUpToN(10));
-console.log(printEvenUpToN(5));
+console.log(printEvenUpToN(10));    // 2 4 6 8 10
+console.log(printEvenUpToN(5));    // 2 4 
 ```
 --
 
@@ -103,11 +103,65 @@ function reverseNum(num) {
     return revNum
 }
 
-console.log(reverseNum(1234))
-console.log(reverseNum(500))
+console.log(reverseNum(1234));    // 4321
+console.log(reverseNum(500));    // 5 
+
+```
+--
+## 8.
+
+```js
+function sumNum(n) {
+    let result = 0
+    while(n > 0) {
+        result = result + (n % 10)
+        n = Math.floor(n / 10)
+    }
+    return result;
+}
+
+console.log(sumNum(123))        // 6
+console.log(sumNum(4321))       // 10
+
+```
+--
+## 9.
+
+```js
+function armstrong(n) {
+    let result = 0
+    let len = String(n).length
+    let tempN = n
+
+    while(tempN > 0) {
+        result = result + ((tempN % 10) ** len)
+        tempN = Math.floor(tempN / 10)
+    }
+    return n === result ? "Armstrong" : "Not Armstrong"
+}
+
+console.log(armstrong(153))        // Armstrong
+console.log(armstrong(123))       // Not Armstrong
 
 ```
 --
 
+--
+## 10.
 
+```js
+function largestNum(arr) {
+    let largest = arr[0];
+    for(let i = 1; i < arr.length; i++) {
+        if(arr[i] > largest) {
+            largest = arr[i]
+        }
+    }
+    return largest
+}
+
+console.log(largestNum([3, 7, 1, 9, 4]));        // 9
+console.log(largestNum([5, 2, 8, 6]));          // 8
+```
+--
 ### More solutions are coming soon.
