@@ -161,5 +161,43 @@ function largestNum(arr) {
 console.log(largestNum([3, 7, 1, 9, 4]));        // 9
 console.log(largestNum([5, 2, 8, 6]));          // 8
 ```
+
+## 11.
+
+```js
+function secondLargest(arr) {
+    let largest = -Infinity;
+    let sLargest = -Infinity
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] > largest) {
+            sLargest = largest
+            largest = arr[i]
+        } else if (arr[i] > sLargest){
+            sLargest = arr[i]
+        }
+        
+    }
+    return sLargest
+}
+
+console.log(secondLargest([3, 7, 1, 9, 4]));        // 7
+console.log(secondLargest([5, 2, 8, 6]));          // 6
+```
+
+## 12.
+
+```js
+function cntVowels(str) {
+    let cnt = 0;
+    let vowels = "aeiou";
+    for(let i of str) {
+        if(vowels.includes(i)) cnt++
+    }
+    return cnt
+}
+
+console.log(cntVowels("hello"));        // 2
+console.log(cntVowels("world"));        // 1
+```
 ---
 ### More solutions are coming soon.
