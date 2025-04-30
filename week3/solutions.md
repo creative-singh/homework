@@ -199,5 +199,52 @@ function cntVowels(str) {
 console.log(cntVowels("hello"));        // 2
 console.log(cntVowels("world"));        // 1
 ```
+
+## 13.
+
+```js
+function checkPalindrome(str) {
+    let left = 0;
+    let right = str.length - 1;
+    while(left <= right) {
+        if(str[left] !== str[right]) {
+            return "Not Palindrome";
+        }
+        left++;
+        right--;
+    }
+    return "Palindrome";
+}
+
+console.log(checkPalindrome("racecar"));      // Palindrome
+console.log(checkPalindrome("hello"));       // Not Palindrome
+
+```
+
+## 14.
+
+```js
+function powerOfNum(num1, num2) {
+    return Math.pow(num1, num2);
+}
+
+console.log(powerOfNum(2, 3));      // 8
+console.log(powerOfNum(5, 2));       // 25
+```
+## 15.
+
+```js
+function minInArr(arr) {
+    let min = Infinity;
+    for(let i of arr) {
+        if(min > i) min = i
+    }
+    return min;
+}
+
+console.log(minInArr([3, 7, 1, 9, 4]));    // 1
+console.log(minInArr([5, 2, 8, 6]));       // 2
+
+```
 ---
 ### More solutions are coming soon.
