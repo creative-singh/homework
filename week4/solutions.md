@@ -39,6 +39,70 @@ console.log(strUpper("hello"));     // HELLO
 console.log(strUpper("abc"));       // ABC
 
 ```
+## 4. 
+```js
+function maxWord(str) {
+    let res = "";
+    let temp = "" 
+    for(let i of str) {
+        if(i === " ") {
+            if(res.length < temp.length) {
+                res = temp
+            }
+            temp = ""
+        } else {
+            temp += i
+        }
+    }
+    if(res.length < temp.length) return temp
+    return res;
+}
+
+console.log(maxWord("The quick brown fox"));    // "quick" 
+console.log(maxWord("I love programming"));     // "programming"
+
+```
+## 5. 
+```js
+function anagramCheck(str1, str2) {
+    if(str1.length !== str2.length) return "No"
+
+    let objStr1 = {}
+    for(let i of str1) {
+        if(objStr1[i]){
+            objStr1[i] = objStr1[i] + 1
+        } else {
+            objStr1[i] = 1
+        }
+    }
+    let objStr2 = {}
+    for(let j of str2) {
+        if(objStr2[j]){
+            objStr2[j] = objStr2[j] + 1
+        } else {
+            objStr2[j] = 1
+        }
+    }
+
+    for(let key in objStr1){
+        if(objStr2[key] === 1) {
+            delete objStr2[key]
+        } else {
+            objStr2[key] = objStr2[key] - 1
+        }
+    }
+    
+    if(Object.values(objStr2).length) {
+        return "No"
+    } 
+    return "Yes"
+
+}
+
+console.log(anagramCheck("listen", "silent"));    // Yes
+console.log(anagramCheck("hello", "world"));     // No
+
+```
 
 ---
 ### Solutions are coming soon.
