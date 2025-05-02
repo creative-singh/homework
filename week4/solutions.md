@@ -103,6 +103,37 @@ console.log(anagramCheck("listen", "silent"));    // Yes
 console.log(anagramCheck("hello", "world"));     // No
 
 ```
+## 6. 
+```js
+function joinWord(arr) {
+    let output = "";
+    for(let i = 0; i < arr.length; i++) {
+        output += arr[i]
+        if(arr.length !== i - 1) output += " "
+    }
+    
+    return output;
+}
+
+console.log(joinWord(["I", "am", "learning"]));      // "I am learning"
+console.log(joinWord(["JavaScript", "is", "fun"]));  // "JavaScript is fun"
+
+```
+## 7. 
+```js
+function sum(arr) {
+    let sum = 0
+    for(let i of arr) {
+        sum += i
+    }
+    return sum
+}
+
+console.log(sum([1, 2, 3, 4]));    // 10
+console.log(sum([5, 10, 15]));     // 30
+
+```
+
 
 ---
 ### Solutions are coming soon.
