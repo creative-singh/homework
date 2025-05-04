@@ -64,10 +64,10 @@ Output: 30
 ## 8️⃣ Find the frequency of each element in an array.
 ```javascript
 Input: [1, 2, 2, 3, 3, 3]  
-Output: 1:1, 2:2, 3:3  
+Output: 1:1 2:2 3:3  
 
 Input: [4, 4, 4, 5]  
-Output: 4:3, 5:1
+Output: 4:3 5:1
 ```
 
 ## 9️⃣ Remove duplicates from an array.
