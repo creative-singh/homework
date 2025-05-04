@@ -134,6 +134,56 @@ console.log(sum([5, 10, 15]));     // 30
 
 ```
 
+## 8. 
+```js
+function countNum(arr) {
+    let dict = {};
+    for(let i = 0; i < arr.length; i++) {
+        if(dict[arr[i]]) {
+            dict[arr[i]] = dict[arr[i]] + 1
+        } else {
+            dict[arr[i]] = 1
+        }
+    }
+    
+    let result = ""
+    for(let i in dict) {
+        result += `${i}:${dict[i]} `
+    }
+    return result
+}
 
+console.log(countNum([1, 2, 2, 3, 3, 3]));      // 1:1 2:2 3:3
+console.log(countNum([4, 4, 4, 5]));            // 4:3 5:1
+```
+
+## 9. 
+```js
+function removeDuplicates(arr) {
+    let res = [];
+    for(let i of arr) {
+        if(!res.includes(i)) res.push(i)
+    }
+    return res 
+}
+
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4]));      // [1, 2, 3, 4]
+console.log(removeDuplicates([5, 5, 6, 7, 7]));         // [5, 6, 7]
+```
+
+## 10. 
+```js
+function searchElem(arr, element) {
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] === element) return i
+    }
+    return "Not Found"
+}
+
+console.log(searchElem([1, 2, 3, 4, 5], 3));      // 2
+console.log(searchElem([10, 20, 30], 20));        // 1
+console.log(searchElem([10, 20, 30], 55));        // Not Found
+
+```
 ---
 ### Solutions are coming soon.
