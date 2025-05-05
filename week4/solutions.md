@@ -185,5 +185,39 @@ console.log(searchElem([10, 20, 30], 20));        // 1
 console.log(searchElem([10, 20, 30], 55));        // Not Found
 
 ```
+## 11. 
+```js
+function nonRepeating(str) {
+    let obj = {};
+    for(let i of str) {
+        if(obj[i]) {
+            obj[i] = obj[i]+1
+        } else {
+            obj[i] = 1
+        }
+    }
+    for(let key in obj) {
+        if(obj[key] === 1) return key
+    }
+    return "No Duplicates"
+}
+
+console.log(nonRepeating("aabbcde" ));      // "c"
+console.log(nonRepeating("xxyz"));         // "y"
+```
+## 12. 
+```js
+function countWords(str) {
+    let cnt = 0
+    for(let i of str) {
+        if(i === " ") cnt++
+    }
+    return cnt + 1
+}
+
+console.log(countWords("I am learning JS"));            // 4
+console.log(countWords("Practice makes perfect"));      // 3
+
+```
 ---
 ### Solutions are coming soon.
