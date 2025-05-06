@@ -246,5 +246,58 @@ console.log(minInArr([3, 7, 1, 9, 4]));    // 1
 console.log(minInArr([5, 2, 8, 6]));       // 2
 
 ```
+## 16.
+
+```js
+function perfectNum(n) {
+    let sum = 0;
+    for (let i = 1; i < n; i++) {
+        if (n % i === 0) {
+            sum += i;
+        }
+    }
+    return sum === n ? "Perfect" : "Not Perfect";
+}
+
+console.log(perfectNum(6));            // Perfect
+console.log(perfectNum(10));           // Not Perfect
+console.log(perfectNum(28));           // Perfect
+
+```
+## 17.
+
+```js
+function fibonacci(n) {
+    let res = [0, 1]
+    if(n === 0) return res[0]
+    if(n === 1) return res
+    for(let i = 2; i < n; i++) {
+        res.push(res[i-1] + res[i-2])
+    }
+    return res
+}
+
+console.log(fibonacci(5));              // 0 1 1 2 3
+console.log(fibonacci(7));              // 0 1 1 2 3 5 8
+console.log(fibonacci(1));              // 0 1
+
+```
+## 18.
+
+```js
+function countNum(n) {
+    let cnt = 0;
+    while(n > 0) {
+        n = Math.floor(n / 10);
+        cnt++;
+    }
+    return cnt;
+}
+
+1234/10
+console.log(countNum(1234));           // 4
+console.log(countNum(99));             // 2
+console.log(countNum(131256));         // 6
+```
 ---
 ### More solutions are coming soon.
