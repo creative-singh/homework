@@ -294,7 +294,6 @@ function countNum(n) {
     return cnt;
 }
 
-1234/10
 console.log(countNum(1234));           // 4
 console.log(countNum(99));             // 2
 console.log(countNum(131256));         // 6
