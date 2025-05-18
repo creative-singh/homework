@@ -298,5 +298,33 @@ console.log(countNum(1234));           // 4
 console.log(countNum(99));             // 2
 console.log(countNum(131256));         // 6
 ```
+## 19.
+
+```js
+function reverseArr(arr) {
+    let reverse = [];
+    for(let i = arr.length - 1; i >= 0; i--) {
+        reverse.push(arr[i])
+
+    }
+    return reverse;
+}
+
+console.log(reverseArr([1, 2, 3, 4]));    // [ 4, 3, 2, 1 ]
+console.log(reverseArr([7, 8, 9]));       // [9, 8, 7]
+```
+## 20.
+
+```js
+function divisorCheck(num) {
+    if(num % 5 == 0 && num % 3 == 0){
+        return "Yes"
+    }
+    return "No";
+}
+
+console.log(divisorCheck(15));    // Yes
+console.log(divisorCheck(9));     // No
+```
 ---
 ### More solutions are coming soon.
