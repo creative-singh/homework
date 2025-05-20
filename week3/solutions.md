@@ -326,5 +326,43 @@ function divisorCheck(num) {
 console.log(divisorCheck(15));    // Yes
 console.log(divisorCheck(9));     // No
 ```
+## 21.
+
+```js
+function sumEvenNum(arr) {
+    let sum = 0
+    for(let val of arr) {
+        if(val % 2 === 0) {
+            sum += val
+        }
+    }
+    return sum
+}
+
+console.log(sumEvenNum([1, 2, 3, 4, 5, 6]));    // 12
+console.log(sumEvenNum([7, 8, 9, 10]));         // 18
+
+```
+## 22.
+
+```js
+function counting(arr) {
+    let pos = 0; let neg = 0;
+    let zero = 0;
+    for(let val of arr) {
+        if(val > 0) {
+            pos++
+        } else if(val < 0) {
+            neg++
+        } else {
+            zero++
+        }
+    }
+    return `Positive = ${pos}, Negative = ${neg}`
+}
+
+console.log(counting([1, -2, 3, -4, 5]));    // Positive = 3, Negative = 2
+console.log(counting([-1, -3, 4, 6]));      // Positive = 2, Negative = 2
+```
 ---
 ### More solutions are coming soon.
