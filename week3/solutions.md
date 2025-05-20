@@ -364,5 +364,28 @@ function counting(arr) {
 console.log(counting([1, -2, 3, -4, 5]));    // Positive = 3, Negative = 2
 console.log(counting([-1, -3, 4, 6]));      // Positive = 2, Negative = 2
 ```
+
+## 23.
+
+```js
+function celsiusToFahrenheit(celsius) {
+  return (celsius * 9/5) + 32;
+}
+
+console.log(celsiusToFahrenheit(0));    // 32
+console.log(celsiusToFahrenheit(100));  // 212
+
+```
+
+## 24.
+
+```js
+function evenOrOdd(num) {
+  return num % 2 == 0 ? "Even" : "Odd"
+}
+
+console.log(evenOrOdd(4)); // Even
+console.log(evenOrOdd(9)); // Odd
+```
 ---
 ### More solutions are coming soon.
