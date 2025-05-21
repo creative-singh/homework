@@ -387,5 +387,20 @@ function evenOrOdd(num) {
 console.log(evenOrOdd(4)); // Even
 console.log(evenOrOdd(9)); // Odd
 ```
+
+## 25.
+
+```js
+function getSquares(num) {
+  let str = "";
+  for(let number = 1; number <= num; number++) {
+    str += `${number * number} `
+  }
+  return str
+}
+
+console.log(getSquares(4)); // 1 4 9 16
+console.log(getSquares(3)); // 1 4 9
+```
 ---
-### More solutions are coming soon.
+
