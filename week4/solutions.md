@@ -219,5 +219,37 @@ console.log(countWords("I am learning JS"));            // 4
 console.log(countWords("Practice makes perfect"));      // 3
 
 ```
+## 13.
+```js
+function capitalize(str) {
+  let arr = str.split(" ")
+  for(let i = 0; i < arr.length; i++) {
+    arr[i] = `${arr[i][0].toUpperCase()}${arr[i].slice(1)}`
+  }
+  return arr.join(" ")
+}
+
+console.log(capitalize("hello world"));    // "Hello World" 
+console.log(capitalize("i love coding"));  // "I Love Coding"
+```
+## 14.
+```js
+function MaxMin(arr) {
+  let max = -Infinity
+  let min = Infinity
+  for(let i of arr) {
+    if(max < i) {
+      max = i
+    }
+    if(min > i) {
+      min = i
+    }
+  }
+  return `Max = ${max}, Min = ${min}`
+}
+
+console.log(MaxMin([2, 5, 1, 8, 3]));    // Max = 8, Min = 1
+console.log(MaxMin([10, -2, 0, 9]));     // Max = 10, Min = -2
+```
 ---
 ### Solutions are coming soon.
