@@ -16,7 +16,7 @@ console.log(numberChecker(5));      // Positive
 console.log(numberChecker(-3));      // Negative
 console.log(numberChecker(0));      // Zero
 ```
---
+
 ## 2. 
 ```js
 function evenOrOdd(num) {
@@ -26,7 +26,7 @@ function evenOrOdd(num) {
 console.log(evenOrOdd(10));     // Even
 console.log(evenOrOdd(7));     // Odd
 ```
---
+
 ## 3. 
 ```js
 function eligibleToVote(age) {
@@ -36,7 +36,7 @@ function eligibleToVote(age) {
 console.log(eligibleToVote(20));     // Eligible to vote
 console.log(eligibleToVote(16));     // Not eligible
 ```
---
+
 ## 4. 
 ```js
 function leapYearOrNot(year) {
@@ -48,7 +48,7 @@ function leapYearOrNot(year) {
 console.log(leapYearOrNot(2024)) // Leap year.
 console.log(leapYearOrNot(2023)) // Not a leap year.
 ```
---
+
 ## 5. 
 ```js
 function largestNum(num1, num2, num3) {
@@ -64,7 +64,7 @@ function largestNum(num1, num2, num3) {
 console.log(largestNum(12, 25, 7)) // 25
 console.log(largestNum(5, 9, 11)) // 11
 ```
---
+
 ## 6. 
 ```js
 function gradeSystem(grade) {
@@ -82,7 +82,7 @@ function gradeSystem(grade) {
 console.log(gradeSystem(85))        // B
 console.log(gradeSystem(72))        // C
 ```
---
+
 ## 7. 
 ```js
 function classifyTemperature(temp) {
@@ -99,7 +99,7 @@ console.log(classifyTemperature(10)); // Cold
 console.log(classifyTemperature(22)); // Moderate
 console.log(classifyTemperature(35)); // Hot
 ```
---
+
 ## 8. 
 ```js
 function checkCharType(char) {
@@ -110,7 +110,7 @@ function checkCharType(char) {
 console.log(checkCharType('a')); // Vowel
 console.log(checkCharType('z')); // Consonant
 ```
---
+
 ## 9. 
 ```js
 function isDivisible(num) {
@@ -120,7 +120,7 @@ function isDivisible(num) {
 console.log(isDivisible(55)); // Divisible
 console.log(isDivisible(23)); // Not divisible
 ```
---
+
 ## 10. 
 ```js
 function checkHeight(height) {
