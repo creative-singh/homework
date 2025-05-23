@@ -10,7 +10,7 @@ function loopLearning(str){
 console.log(loopLearning("krishna"));
 console.log(loopLearning("kajal"));
 ```
---
+
 ## 2.
 ```js
 function loopLearning(str){
@@ -21,7 +21,7 @@ function loopLearning(str){
 console.log(loopLearning("krishna"));
 console.log(loopLearning("kajal"));
 ```
---
+
 ## 3.
 ```js
 function loopLearning(str){
@@ -33,7 +33,7 @@ function loopLearning(str){
 console.log(loopLearning("krishna"));
 console.log(loopLearning("kajal"));
 ```
---
+
 ## 4. 
 ```js
 function loopLearning(arr){
@@ -43,7 +43,7 @@ function loopLearning(arr){
 }
 console.log(loopLearning([1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010]));
 ```
---
+
 ## 5. 
 ```js
 function loopLearning(arr){
@@ -54,7 +54,7 @@ function loopLearning(arr){
 
 loopLearning(["00", "01", "10", "11", "010", "011", "100", "101", "110", "111"]);
 ```
---
+
 ## 6.
 ```js
 function multipleOfNum(num) {
@@ -68,7 +68,7 @@ console.log('-')
 multipleOfNum(12);
 
 ```
---
+
 ## 7.
 ```js
 function addElems(arr) {
@@ -86,7 +86,7 @@ function addElems(arr) {
 console.log(addElems([1, 2, 3, 4]));        // 10
 console.log(addElems([1, 2, 3, 4, 5, 6, 7]));       // 28
 ```
---
+
 ## 8.
 ```js
 function totalLengthOfWords(arr) {
@@ -103,7 +103,7 @@ console.log(totalLengthOfWords(["sun", "moon", "stars", "planet"]));
 // [3, 4, 5, 6]
 
 ```
---
+
 ## 9.
 ```js
 function countOccurences(str, char) {
@@ -119,7 +119,7 @@ console.log(countOccurences("krishna", "i"))      // 1
 console.log(countOccurences("a javascript", "a"))      // 3
 
 ```
---
+
 ## 10.
 ```js
 function countVowels(str) {
