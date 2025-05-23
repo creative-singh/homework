@@ -251,5 +251,19 @@ function MaxMin(arr) {
 console.log(MaxMin([2, 5, 1, 8, 3]));    // Max = 8, Min = 1
 console.log(MaxMin([10, -2, 0, 9]));     // Max = 10, Min = -2
 ```
+## 15.
+```js
+function reverseArr(arr) {
+    let reverse = [];
+    for(let i = arr.length - 1; i >= 0; i--) {
+        reverse.push(arr[i])
+
+    }
+    return reverse;
+}
+
+console.log(reverseArr([1, 2, 3, 4]));    // [ 4, 3, 2, 1 ]
+console.log(reverseArr([7, 8, 9]));       // [9, 8, 7]
+```
 ---
-### Solutions are coming soon.
+
