@@ -20,4 +20,4 @@ console.log(mergeObjects({ x: 5 }, { y: 10 }));       // { x: 5, y: 10 }
 ```
 
 ---
-### Mode solutions are coming soon.
+### More solutions are coming soon.
