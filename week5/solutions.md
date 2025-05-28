@@ -27,6 +27,15 @@ function keyToArr(obj) {
 console.log(keyToArr({ name: "John", age: 25 }));   // ["name", "age"]
 console.log(keyToArr({ a: 1, b: 2, c: 3 }));        // ["a", "b", "c"]
 ```
+## 3. 
+```js
+function valueToArr(obj) {
+  return Object.values(obj)
+}
+
+console.log(valueToArr({ name: "John", age: 25 }));      // ["John", 25]
+console.log(valueToArr({ x: 10, y: 20, z: 30 }));        // [10, 20, 30]
+```
 
 ---
 ### More solutions are coming soon.
