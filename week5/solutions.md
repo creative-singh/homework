@@ -36,6 +36,27 @@ function valueToArr(obj) {
 console.log(valueToArr({ name: "John", age: 25 }));      // ["John", 25]
 console.log(valueToArr({ x: 10, y: 20, z: 30 }));        // [10, 20, 30]
 ```
+## 4. 
+```js
+function printObject(obj) {
+  const result = Object.entries(obj)
+    .map(([key, value]) => `${key}: ${value}`)
+    .join(', ');
+}
+
+printObject({ name: "Alice", city: "Delhi" }); // name: Alice, city: Delhi
+printObject({ x: 1, y: 2 });                   // x: 1, y: 2
+
+```
+## 5.
+```js
+const output1 = { student: { name: "John", grade: "A" } };
+const output2 = { school: { location: { city: "Mumbai" } } };
+
+console.log(output1.student.grade);         // A
+console.log(output2.school.location.city);  // Mumbai
+```
+
 
 ---
 ### More solutions are coming soon.
