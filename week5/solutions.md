@@ -56,6 +56,40 @@ const output2 = { school: { location: { city: "Mumbai" } } };
 console.log(output1.student.grade);         // A
 console.log(output2.school.location.city);  // Mumbai
 ```
+## 6.
+```js
+function countStrValues(obj) {
+  let count = 0;
+  for(let key in obj) {
+    if(typeof obj[key] === "string"){
+      count++;
+    }
+  }
+  return count
+}
+
+console.log(countStrValues({ a: "apple", b: 1, c: "banana" }));           // 2
+console.log(countStrValues({ x: "yes", y: "no", z: true }));              // 2
+console.log(countStrValues({ x: "yes", y: "no", z: "might be" }));        // 3
+```
+
+## 7.
+```js
+function checkNumericValues(obj) {
+  let objLength = 0;
+  let count = 0
+  for(let key in obj) {
+    if(typeof obj[key] === "number"){
+      count++;
+    }
+    objLength++
+  }
+  return count === objLength
+}
+
+console.log(checkNumericValues({ a: 10, b: 20, c: 30 }));          // true
+console.log(checkNumericValues({ a: 10, b: "ten" }));              // false
+```
 
 
 ---
