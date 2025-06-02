@@ -91,6 +91,38 @@ console.log(checkNumericValues({ a: 10, b: 20, c: 30 }));          // true
 console.log(checkNumericValues({ a: 10, b: "ten" }));              // false
 ```
 
+## 8.
+```js
+function swapKeyValue(obj) {
+  let newObj = {}
+
+  for(let key in obj) {
+    newObj[obj[key]] = key
+  }
+
+  return newObj
+}
+
+console.log(swapKeyValue({ a: 1, b: 2 }));          // { 1: "a", 2: "b" }
+console.log(swapKeyValue({ x: 10, y: 20 }));       // { 10: "x", 20: "y" }
+```
+## 9.
+```js
+function createNewObj(key, val) {
+  let newObj = {}
+
+  for(let i = 0; i < key.length; i++) {
+    newObj[key[i]] = val[i]
+  }
+
+  return newObj
+}
+
+console.log(createNewObj(["a", "b"], [1, 2]));        // { a: 1, b: 2 }
+console.log(createNewObj(["x", "y"], [5, 10]));       // { x: 5, y: 10 }
+```
+
+
 
 ---
 ### More solutions are coming soon.
