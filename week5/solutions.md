@@ -121,6 +121,35 @@ function createNewObj(key, val) {
 console.log(createNewObj(["a", "b"], [1, 2]));        // { a: 1, b: 2 }
 console.log(createNewObj(["x", "y"], [5, 10]));       // { x: 5, y: 10 }
 ```
+## 10.
+```js
+function findMaxVal(obj) {
+    let max = [-Infinity, "a"]
+    for(let key in obj) {
+        if(max[0] < obj[key]) {
+            max[0] = obj[key]
+            max[1] = key
+        }
+    }
+    return max[1]
+  
+}
+
+console.log(findMaxVal({ a: 10, b: 50, c: 30 }));        // b
+console.log(findMaxVal({ x: 100, y: 200, z: 150 }));     // y
+
+```
+
+## 11.
+```js
+function objIsEmpty(obj) {
+    return !Object.keys(obj).length
+  
+}
+
+console.log(objIsEmpty({}));                    // true
+console.log(objIsEmpty({ name: "John" }));      // false
+```
 
 
 
