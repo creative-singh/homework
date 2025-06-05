@@ -99,13 +99,13 @@ Input: { name: "John" }
 Output: false
 ```
 
-## 1️⃣2️⃣ Sort an object by its values (assuming all values are numbers).
+## 1️⃣2️⃣ Find the number of properties in an object.
 ```sh
-Input: { a: 3, b: 1, c: 2 }
-Output: { b: 1, c: 2, a: 3 }
+Input: { name: "John", age: 25, grade: "A" }
+Output: 3
 
-Input: { x: 9, y: 2, z: 5 }
-Output: { y: 2, z: 5, x: 9 }
+Input: { x: 1, y: 2, z: 3, w: 4 }
+Output: 4
 ```
 
 ## 1️⃣3️⃣ Create a copy of an object.
@@ -216,11 +216,11 @@ Input: { x: 10, y: 20 }
 Output: 10 20
 ```
 
-## 2️⃣5️⃣ Find the number of properties in an object.
+## 2️⃣5️⃣ Sort an object by its values (assuming all values are numbers).
 ```sh
-Input: { name: "John", age: 25, grade: "A" }
-Output: 3
+Input: { a: 3, b: 1, c: 2 }
+Output: { b: 1, c: 2, a: 3 }
 
-Input: { x: 1, y: 2, z: 3, w: 4 }
-Output: 4
+Input: { x: 9, y: 2, z: 5 }
+Output: { y: 2, z: 5, x: 9 }
 ```
