@@ -151,6 +151,36 @@ console.log(objIsEmpty({}));                    // true
 console.log(objIsEmpty({ name: "John" }));      // false
 ```
 
+## 12.
+```js
+function countOccurences(obj) {
+    let count = 0
+    for(let key in obj) {
+        count++
+    }
+    return count
+}
+
+console.log(countOccurences({ name: "John", age: 25, grade: "A" }));    // 3
+console.log(countOccurences({ x: 1, y: 2, z: 3, w: 4 }));               // 4
+
+```
+
+## 13.
+```js
+function duplicateObj(obj) {
+    let duplicate = {}
+    for(let key in obj) {
+        duplicate[key] = obj[key]
+    }
+    return duplicate
+}
+
+console.log(duplicateObj({ x: 10, y: 20 }));      // { x: 10, y: 20 }
+console.log(duplicateObj({ a: 1, b: 2 }));        // { a: 1, b: 2 }
+```
+
+
 
 
 ---
