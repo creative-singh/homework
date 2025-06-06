@@ -179,9 +179,25 @@ function duplicateObj(obj) {
 console.log(duplicateObj({ x: 10, y: 20 }));      // { x: 10, y: 20 }
 console.log(duplicateObj({ a: 1, b: 2 }));        // { a: 1, b: 2 }
 ```
+## 14.
+```js
+function convertToJSON(obj) {
+    return JSON.stringify(obj)
+}
 
+console.log(convertToJSON({ name: "Alice", age: 22 }));    // '{"name":"Alice","age":22}'
+console.log(convertToJSON({ x: 1, y: true }));             // '{"x":1,"y":true}'
+```
 
+## 15.
+```js
+function convertToObj(str) {
+    return JSON.parse(str)
+}
 
+console.log(convertToObj('{"name":"Alice","age":22}'));    // { name: "Alice", age: 22 }
+console.log(convertToObj('{"x":1,"y":true}'));             // { x: 1, y: true }
+```
 
 ---
 ### More solutions are coming soon.
