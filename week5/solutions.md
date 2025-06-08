@@ -199,5 +199,36 @@ console.log(convertToObj('{"name":"Alice","age":22}'));    // { name: "Alice", a
 console.log(convertToObj('{"x":1,"y":true}'));             // { x: 1, y: true }
 ```
 
+## 16.
+```js
+function countStrValues(obj) {
+    let cnt = 0;
+    for(let key in obj) {
+        if(typeof obj[key] === "string"){
+            cnt++
+        }
+    }
+    return cnt
+}
+
+console.log(countStrValues({ a: "hi", b: 2, c: "bye" }));           // 2
+console.log(countStrValues({ x: "hello", y: "world", z: 3 }));      // 2
+```
+
+## 17.
+```js
+function greaterThanNum(obj, num) {
+    let result = [];
+    for(let key in obj) {
+        if(obj[key] > 50){
+            result.push(key)
+        }
+    }
+    return result
+}
+
+console.log(greaterThanNum({ a: 30, b: 60, c: 90 }, 50));   // ["b", "c"]
+console.log(greaterThanNum({ x: 51, y: 49 }, 50));          // ["x"]
+```
 ---
 ### More solutions are coming soon.
