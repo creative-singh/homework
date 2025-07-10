@@ -289,5 +289,15 @@ console.log(deeplySimilar({ a: [1, 2] }, { a: [1, 2] }));                       
 console.log(deeplySimilar({ a: [1, 2] }, { a: [2, 1] }));                                       // false
 console.log(deeplySimilar({ a: function() { return 1; } }, { a: function() { return 1; } }));   // false
 ```
+
+## 19.
+```js
+function storeStudent(obj) {
+    return Object.values(obj).toString()
+}
+
+console.log(storeStudent({ name: "John", age: 20, grade: "A" }));    // John 20 A
+console.log(storeStudent({ name: "Priya", age: 18, grade: "B" }));   // Priya 18 B
+```
 ---
 ### More solutions are coming soon.
