@@ -310,5 +310,16 @@ function updateObject(obj, newObj) {
 console.log(updateObject({ name: "John" }, { key: "age", value: 25 }));   // { name: "John", age: 25 }
 console.log(updateObject({ x: 5 }, { key: "y", value: 10 }));             // { x: 5, y: 10 }
 ```
+
+## 21.
+```js
+function deleteKey(obj, keyToBeDeleted) {
+    delete obj[keyToBeDeleted]
+    return obj
+}
+
+console.log(deleteKey({ name: "John", age: 25 }, "age"));   // { name: "John" }
+console.log(deleteKey({ x: 1, y: 2 }, "y"));                // { x: 1 }
+```
 ---
 ### More solutions are coming soon.
