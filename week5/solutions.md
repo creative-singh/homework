@@ -299,5 +299,16 @@ function storeStudent(obj) {
 console.log(storeStudent({ name: "John", age: 20, grade: "A" }));    // John 20 A
 console.log(storeStudent({ name: "Priya", age: 18, grade: "B" }));   // Priya 18 B
 ```
+
+## 20.
+```js
+function updateObject(obj, newObj) {
+    obj[newObj.key] = newObj.value
+    return obj
+}
+
+console.log(updateObject({ name: "John" }, { key: "age", value: 25 }));   // { name: "John", age: 25 }
+console.log(updateObject({ x: 5 }, { key: "y", value: 10 }));             // { x: 5, y: 10 }
+```
 ---
 ### More solutions are coming soon.
