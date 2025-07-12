@@ -321,5 +321,15 @@ function deleteKey(obj, keyToBeDeleted) {
 console.log(deleteKey({ name: "John", age: 25 }, "age"));   // { name: "John" }
 console.log(deleteKey({ x: 1, y: 2 }, "y"));                // { x: 1 }
 ```
+
+## 22.
+```js
+function validateKey(obj, keyToBeChecked) {
+    return !!obj[keyToBeChecked]
+}
+
+console.log(validateKey({ name: "John" }, "age"));   // false
+console.log(validateKey({ age: 25 }, "age"));        // true
+```
 ---
 ### More solutions are coming soon.
