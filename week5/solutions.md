@@ -331,5 +331,19 @@ function validateKey(obj, keyToBeChecked) {
 console.log(validateKey({ name: "John" }, "age"));   // false
 console.log(validateKey({ age: 25 }, "age"));        // true
 ```
+
+## 23.
+```js
+function printKeys(obj) {
+    let keys = []
+    for(let key in obj) {
+        keys.push(key)
+    }
+    return keys.join(' ')
+}
+
+console.log(printKeys({ name: "John", age: 25 }));   // name age
+console.log(printKeys({ x: 1, y: 2 }));              // x y
+```
 ---
 ### More solutions are coming soon.
