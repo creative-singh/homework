@@ -345,5 +345,20 @@ function printKeys(obj) {
 console.log(printKeys({ name: "John", age: 25 }));   // name age
 console.log(printKeys({ x: 1, y: 2 }));              // x y
 ```
+
+## 24.
+```js
+function printValues(obj) {
+    let values = []
+    for(let key in obj) {
+        values.push(obj[key])
+    }
+    return values.join(' ')
+}
+
+console.log(printValues({ name: "John", age: 25 }));   // John 25
+console.log(printValues({ x: 10, y: 20 }));            // 10 20
+
+```
 ---
 ### More solutions are coming soon.
