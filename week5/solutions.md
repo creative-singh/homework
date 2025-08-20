@@ -360,5 +360,22 @@ console.log(printValues({ name: "John", age: 25 }));   // John 25
 console.log(printValues({ x: 10, y: 20 }));            // 10 20
 
 ```
+
+## 25.
+```js
+function sortObjectByValues(obj) {
+    let sorted = Object.entries(obj)
+        .sort((a, b) => a[1] - b[1])  // sort by values
+        .reduce((acc, [key, val]) => {
+            acc[key] = val;
+            return acc;
+        }, {});
+    return sorted;
+}
+
+console.log(sortObjectByValues({ a: 3, b: 1, c: 2 })); // { b: 1, c: 2, a: 3 }
+console.log(sortObjectByValues({ x: 9, y: 2, z: 5 })); // { y: 2, z: 5, x: 9 }
+```
+
 ---
-### More solutions are coming soon.
+
